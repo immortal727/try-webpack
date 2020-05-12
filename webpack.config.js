@@ -3,6 +3,17 @@ const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
+    // настройки webpack
+    // точки входа
+    entry: {
+        main: './src/main/js/index.js',
+        about: './src/about/js/index.js',
+    },
+    output: {
+        filename: '[name].js', //
+        path: path.resolve(__dirname, 'dist')
+    },
+
 
     module: {
         rules: [

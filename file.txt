@@ -37,3 +37,5 @@ src
     about - для about.html
         js
            index.js
+
+npm run build
