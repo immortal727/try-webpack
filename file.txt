@@ -1,23 +1,24 @@
+создать папку, войти в папку с проектом
 cd путь до папки_с_проектом
 
-npm install установит все зависимости,
-перечисленные в package.json
-
-npm update - обновит все зависимости,
-перечисленные в package.json
-
 npm init -y формирование package.json файла
+package.json - содержит информацию о проекте (название, версию, список модулей, которые нужны для работы проекта и тд)
 
+устанавливаем необходимые модули через npm:
+вебпак - система сборки
 npm install webpack webpack-cli --save-dev
 
-
+babel - перевод современного js в старый код
 npm install babel-loader @babel/core @babel/preset-env --save-dev
 npm install @babel/runtime @babel/plugin-transform-runtime --save-dev
 
+для возможности работы с препроцессором sass/scss
+для возможности работы с css файлами
 npm install node-sass sass-loader --save-dev
 npm install mini-css-extract-plugin --save-dev
 npm install style-loader css-loader --save-dev
 
+библиотеку jQuery
 npm install jquery --save
 
 /node_modules/ - в папке хранятся все загружаемые
@@ -25,17 +26,17 @@ npm install jquery --save
 
 node_modules НИКОГДА НЕ ВЫКЛАДЫВАТЬ НА GUTHUB и тп
 
-main.html
-about.html
-src
-    main - для main.html
-        js
-           Book.js
-           index.js
-        css
-           style.css
-    about - для about.html
-        js
-           index.js
+Если Вы скачали проект с package.json файлом необходимо выполнить:
+npm install установит все зависимости, перечисленные в package.json
 
+npm update - обновит все зависимости, перечисленные в package.json
+
+в package.json описаны 2 команды:
+генерирует файлы в режиме production
+"build": "webpack --mode production --config webpack.config.js",
+генерирует файлы в режиме development + следит за изменениями в проекте
+"start": "webpack --mode development --config webpack.config.js --watch"
+
+запуск комад:
 npm run build
+npm run start

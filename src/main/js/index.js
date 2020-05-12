@@ -1,8 +1,9 @@
 import "../css/style.css";
 import {Book} from "./Book";
 
-let book = new Book("Война и Мир", "Толстой",
-    1200);
+let book =
+    new Book("Война и Мир", "Толстой",
+        1200);
 document.body
     .append(document.createTextNode(book.printInfo()));
 
