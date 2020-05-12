@@ -1,0 +1,39 @@
+cd путь до папки_с_проектом
+
+npm install установит все зависимости,
+перечисленные в package.json
+
+npm update - обновит все зависимости,
+перечисленные в package.json
+
+npm init -y формирование package.json файла
+
+npm install webpack webpack-cli --save-dev
+
+
+npm install babel-loader @babel/core @babel/preset-env --save-dev
+npm install @babel/runtime @babel/plugin-transform-runtime --save-dev
+
+npm install node-sass sass-loader --save-dev
+npm install mini-css-extract-plugin --save-dev
+npm install style-loader css-loader --save-dev
+
+npm install jquery --save
+
+/node_modules/ - в папке хранятся все загружаемые
+модули, необходимые проекту (библиотеки, плагины и тд)
+
+node_modules НИКОГДА НЕ ВЫКЛАДЫВАТЬ НА GUTHUB и тп
+
+main.html
+about.html
+src
+    main - для main.html
+        js
+           Book.js
+           index.js
+        css
+           style.css
+    about - для about.html
+        js
+           index.js
